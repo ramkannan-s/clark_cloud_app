@@ -1,0 +1,9 @@
+{
+  "data_dir": "{{ consul_data_path }}",
+  "bind_addr": {% raw %}"{{ GetInterfaceIP \"ens4\" }}"{% endraw %},
+  "server": true,
+  "bootstrap": true,
+  "client_addr": "0.0.0.0",
+  "ui": true,
+  "enable_local_script_checks": true
+}

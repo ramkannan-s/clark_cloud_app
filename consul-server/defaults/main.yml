@@ -1,0 +1,13 @@
+consul_download_url: "https://releases.hashicorp.com/consul/1.7.2/consul_1.7.2_linux_amd64.zip"
+consul_sha256_checksum: "5ab689cad175c08a226a5c41d16392bc7dd30ceaaf90788411542a756773e698"
+consul_installation_path: "/tmp/consul.zip"
+consul_config_path: "/etc/consul.d"
+consul_data_path: "/var/consul"
+
+#consul_mode: client
+consul_mode: server
+
+#consul_cloud_provider: "aws"
+#consul_aws_provider: "gce"
+#consul_aws_tag_key: "consul-cluster"
+#consul_aws_tag_value: "auto-join"

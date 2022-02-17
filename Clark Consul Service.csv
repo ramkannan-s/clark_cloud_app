@@ -1,0 +1,11 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+Clark Consul Service,Asia Pacific (Mumbai),,Amazon EC2,0,46.25,555.00,USD,"Operating system (Linux), Quantity (1), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (10 GB), Instance type (t2.large)"
+Clark Consul Service,Asia Pacific (Mumbai),,Amazon EC2,0,18.97,227.64,USD,"Operating system (Linux), Quantity (3), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (10 GB), Instance type (t3.micro)"
+Clark Consul Service,Asia Pacific (Mumbai),,Amazon Virtual Private Cloud (VPC),0,0,0.00,USD,"Working days per month (22), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Clark Consul Service,Asia Pacific (Mumbai),,Amazon Route 53,0,0.5,6.00,USD,Hosted Zones (1)
+Clark Consul Service,Asia Pacific (Mumbai),,Application Load Balancer,0,40.81,489.72,USD,Number of Application Load Balancers (1)
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
