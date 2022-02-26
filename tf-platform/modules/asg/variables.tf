@@ -22,3 +22,6 @@ variable "target_group_arns" {
   type = list(string)
 }
 
+variable "app_instance_count" {
+  type = number
+}

@@ -28,8 +28,8 @@ resource "aws_security_group_rule" "app_ingress_02" {
 
 resource "aws_security_group_rule" "app_ingress_03" {
   type              = "ingress"
-  from_port         = 8080
-  to_port           = 8150
+  from_port         = 8500
+  to_port           = 8550
   protocol          = "tcp"
   cidr_blocks       = ["0.0.0.0/0"]
   security_group_id = aws_security_group.app.id
@@ -46,11 +46,11 @@ resource "aws_security_group_rule" "app_egress_01" {
 
 resource "aws_security_group" "asg" {
   name        = "terraform-example-asg-${var.environment}"
-  description = "allow port 8080 access"
+  description = "allow port 8500 access"
   vpc_id      = data.terraform_remote_state.network.outputs.vpc_id
   ingress {
-    from_port   = 8080
-    to_port     = 8080
+    from_port   = 8500
+    to_port     = 8500
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }

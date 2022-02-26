@@ -28,8 +28,8 @@ resource "aws_launch_configuration" "example" {
   key_name        = var.key_name
   user_data       = <<-EOF
               #!/bin/bash
-              yum update -y
-              yum install -y httpd
+              apt-get update -y
+              apt-get install -y httpd
               service httpd start
               chkconfig httpd on
               echo “Hello World from $(hostname -f)” > /var/www/html/index.html &
@@ -44,8 +44,8 @@ resource "aws_autoscaling_group" "example" {
   launch_configuration = aws_launch_configuration.example.name
   vpc_zone_identifier  = var.vpc_zone_identifier
   #availability_zones   = var.az
-  min_size          = 3
-  max_size          = 3
+  min_size          = "${var.app_instance_count}"
+  max_size          = "${var.app_instance_count}"
   target_group_arns = var.target_group_arns
   health_check_type = "ELB"
   tag {

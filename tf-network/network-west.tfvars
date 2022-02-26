@@ -1,5 +1,5 @@
 #AWS Region
-region = "ap-south-1"
+region = "eu-west-1"
 
 
 #VPC
@@ -11,7 +11,7 @@ public_subnet_cidrs = ["10.156.8.0/22", "10.156.12.0/23", "10.156.14.0/23"]
 
 
 # Tagging
-vpc_name = "Experiment-VPC-SOUTH"
+vpc_name = "Experiment-VPC-WEST"
 
 contact_email = "ramkannan2612@gmail.com"
 

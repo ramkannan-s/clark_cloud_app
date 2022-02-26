@@ -18,9 +18,9 @@ node() {
       }
     }
 
-    stage("Deploy App using Ansible") {
+    stage("Deploy Consul using Ansible") {
         sh """
-        ansible-playbook -i aws_ec2.yaml -u ubuntu --private-key=/home/jenkins/experiment-clark-key-pair.pem deploy_app.yml -v
+        ansible-playbook -i aws_ec2.yaml -u ubuntu --private-key=/home/jenkins/experiment-clark-key-pair.pem deploy_consul_app.yml --extra-vars "consul_cloud_provider=aws consul_aws_provider=gce consul_aws_tag=consul consul_mode=server consul_aws_tag_key=consul-cluster consul_aws_tag_value=auto-join"
       """
     }
 

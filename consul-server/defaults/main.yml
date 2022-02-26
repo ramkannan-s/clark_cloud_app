@@ -7,7 +7,7 @@ consul_data_path: "/var/consul"
 #consul_mode: client
 consul_mode: server
 
-#consul_cloud_provider: "aws"
-#consul_aws_provider: "gce"
-#consul_aws_tag_key: "consul-cluster"
-#consul_aws_tag_value: "auto-join"
+consul_cloud_provider: "aws"
+consul_aws_provider: "gce"
+consul_aws_tag_key: "consul-cluster"
+consul_aws_tag_value: "auto-join"

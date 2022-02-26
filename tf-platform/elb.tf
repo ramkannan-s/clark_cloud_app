@@ -18,6 +18,7 @@ module "asg" {
   key_name            = var.key_pair_name
   environment         = var.environment
   target_group_arns   = [module.alb.alb_tg_arn]
+  app_instance_count  = var.app_instance_count
 }
 
 module "alb" {
@@ -33,6 +34,6 @@ module "alb" {
   vpc_id                = data.terraform_remote_state.network.outputs.vpc_id
   target_group_sticky   = "false"
   target_group_path     = "/hello/"
-  target_group_port     = "8080"
+  target_group_port     = "8500"
   environment           = var.environment
 }
